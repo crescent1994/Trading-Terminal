@@ -1,0 +1,25 @@
+
+.output
+.cache
+dist
+
+.turbo
+
+**/src-tauri/target/**
+**/src-tauri/gen/**
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# IDE
+.vscode/settings.json
+
