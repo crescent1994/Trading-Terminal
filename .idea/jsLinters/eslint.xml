@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EslintConfiguration">
+    <option name="fix-on-save" value="true" />
+    <option name="eslintPackage" value="$PROJECT_DIR$/apps/web/node_modules/eslint" />
+    <option name="workingDirectory" value="$PROJECT_DIR$/apps/web" />
+  </component>
+</project>
