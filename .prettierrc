@@ -15,5 +15,4 @@
 			}
 		}
 	],
-	"tailwindStylesheet": "./src/routes/layout.scss"
 }

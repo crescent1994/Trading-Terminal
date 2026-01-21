@@ -7,6 +7,9 @@
     "check-types": {
       "dependsOn": ["^check-types"]
     },
+    "check": {
+      "dependsOn": ["^check"]
+    },
     "dev": {
       "persistent": true,
       "cache": false

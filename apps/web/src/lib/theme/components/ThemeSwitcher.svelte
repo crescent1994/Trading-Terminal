@@ -164,7 +164,7 @@
 	</div>
 {/if}
 
-<style>
+<style lang="scss">
 	.theme-switcher {
 		position: relative;
 		font-family: var(--font-family);

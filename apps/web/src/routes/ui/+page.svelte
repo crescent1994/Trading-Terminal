@@ -153,7 +153,7 @@
 	</footer>
 </div>
 
-<style>
+<style lang="scss">
 	.demo-container {
 		min-height: 100vh;
 		padding: var(--spacing-6);

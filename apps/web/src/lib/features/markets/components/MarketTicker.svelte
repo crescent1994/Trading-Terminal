@@ -26,7 +26,7 @@
 	{/if}
 </div>
 
-<style>
+<style lang="scss">
 	.ticker {
 		display: grid;
 		gap: 0.5rem;

@@ -1,11 +1,13 @@
 {
   "name": "Trading-Terminal",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
+    "check": "turbo check",
     "test": "echo \"Error: no test specified\" && exit 1",
     "desktop": "pnpm --filter @app/desktop tauri"
   },
@@ -13,6 +15,32 @@
   "author": "",
   "packageManager": "pnpm@10.27.0",
   "devDependencies": {
-    "turbo": "^2.7.5"
+    "@eslint/compat": "^1.4.0",
+    "@eslint/js": "^9.39.1",
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.49.1",
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/node": "^20",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-svelte": "^3.13.1",
+    "eslint-plugin-unused-imports": "^4.2.0",
+    "globals": "^16.5.0",
+    "prettier": "^3.7.4",
+    "prettier-plugin-svelte": "^3.4.0",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "svelte": "^5.45.6",
+    "svelte-check": "^4.3.4",
+    "tailwindcss": "^4.1.17",
+    "turbo": "^2.7.5",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.1"
+  },
+  "dependencies": {
+    "@iconify/css-svelte": "^1.0.0",
+    "@iconify/unplugin": "^0.0.6"
   }
 }

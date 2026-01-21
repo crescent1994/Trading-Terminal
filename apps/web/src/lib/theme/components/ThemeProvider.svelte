@@ -39,7 +39,7 @@
 	</div>
 {/if}
 
-<style>
+<style lang="scss">
 	.theme-loading {
 		visibility: hidden;
 	}

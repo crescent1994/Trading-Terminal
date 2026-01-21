@@ -1,4 +1,5 @@
 <script lang="ts">
+	import LeftSideMenu from '$lib/components/ui/LeftSideMenu.svelte';
 </script>
 
 <div class="shell">
@@ -6,7 +7,7 @@
 		<slot name="header"></slot>
 	</div>
 	<div class="container">
-		<div class="left"></div>
+		<div class="left"><LeftSideMenu></LeftSideMenu></div>
 		<div class="main"><slot></slot></div>
 		<div class="right">
 			<slot name="right"></slot>
@@ -17,7 +18,8 @@
 <style lang="scss">
 	.shell {
 		width: 100%;
-		min-height: 100vh;
+		height: 100vh;
+		overflow: hidden;
 	}
 
 	.container {
@@ -27,10 +29,6 @@
 
 		.main {
 			flex: 1;
-		}
-		> div {
-			height: 100%;
-			border: 1px solid red;
 		}
 	}
 </style>
