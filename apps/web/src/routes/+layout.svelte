@@ -3,6 +3,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import ThemeProvider from '$lib/components/providers/ThemeProvider.svelte';
 	import { themeStore } from '@app/theme';
+	import { appConfig } from '$lib/config';
 
 	const { children } = $props();
 
@@ -11,6 +12,9 @@
 </script>
 
 <svelte:head>
+	<title>{appConfig.meta.title}</title>
+	<meta name="description" content={appConfig.meta.description} />
+	<meta name="keywords" content={appConfig.meta.keywords.join(', ')} />
 	<link rel="icon" href={favicon} />
 	<meta name="theme-color" content={themeColor} />
 </svelte:head>
