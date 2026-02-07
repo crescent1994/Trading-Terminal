@@ -28,6 +28,8 @@ export interface ThemeColors {
 	surface: string;
 	/** 卡片背景色 - Card background */
 	card: string;
+	// 可输入背景框
+	input: string;
 
 	/** 文本颜色 - Text colors */
 	text: string;
@@ -127,12 +129,11 @@ export interface ThemeSpacing {
 /** 阴影配置 - Shadow Configuration */
 export interface ThemeShadows {
 	shadowNone: string;
-	shadowSm: string;
-	shadowMd: string;
-	shadowLg: string;
-	shadowXl: string;
-	shadow2xl: string;
-	shadowInner: string;
+	shadowNormal: string;
+	shadowFloat: string;
+	shadowModal: string;
+	shadowInset: string;
+	shadowDeepInset: string;
 }
 
 /** 过渡动画配置 - Transition Configuration */

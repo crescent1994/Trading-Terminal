@@ -1,0 +1,15 @@
+{
+  "name": "@app/theme",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "exports": {
+    ".": {
+      "svelte": "./index.ts",
+      "default": "./index.ts"
+    }
+  }
+}

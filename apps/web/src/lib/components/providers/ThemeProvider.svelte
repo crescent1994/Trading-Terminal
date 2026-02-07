@@ -6,7 +6,7 @@
 	 * 在应用根部使用此组件来初始化主题系统
 	 */
 	import { onMount } from 'svelte';
-	import { createThemeContext, setThemeContext, initializeTheme } from '../context.svelte';
+	import { createThemeContext, setThemeContext, initializeTheme } from '@app/theme';
 
 	interface Props {
 		/** 子内容 */

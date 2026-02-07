@@ -5,7 +5,7 @@
  * @example
  * ```ts
  * // 导入主题 store
- * import { themeStore } from '$lib/theme';
+ * import { themeStore } from '@app/theme';
  *
  * // 切换主题
  * themeStore.setTheme('dark');
@@ -20,11 +20,11 @@
  * @example
  * ```svelte
  * <script>
- *   import { ThemeSwitcher, ThemeProvider } from '$lib/theme';
+ *   import { ThemeProvider, getThemeContext } from '@app/theme';
  * </script>
  *
  * <ThemeProvider>
- *   <ThemeSwitcher variant="dropdown" />
+ *   <App />
  * </ThemeProvider>
  * ```
  */
@@ -45,8 +45,26 @@ export type {
 // Store 导出
 export { themeStore } from './store.svelte';
 
+// Context 导出
+export type { ThemeContext } from './context.svelte';
+export {
+	createThemeContext,
+	setThemeContext,
+	getThemeContext,
+	initializeTheme
+} from './context.svelte';
+
 // 预设主题导出
-export { lightTheme, darkTheme, presetThemes, DEFAULT_THEME_ID } from './presets';
+export { presetThemes, DEFAULT_THEME_ID } from './presets';
+
+// 主题配置导出
+export { darkTheme } from './themes/darkTheme';
+export {
+	sharedTypography,
+	sharedShape,
+	sharedSpacing,
+	sharedTransitions
+} from './themes/common';
 
 // 工具函数导出
 export {
@@ -60,7 +78,3 @@ export {
 	adjustBrightness,
 	hexToRgba
 } from './utils';
-
-// 组件导出
-export { default as ThemeSwitcher } from './components/ThemeSwitcher.svelte';
-export { default as ThemeProvider } from './components/ThemeProvider.svelte';

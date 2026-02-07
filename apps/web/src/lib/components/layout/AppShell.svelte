@@ -1,17 +1,13 @@
 <script lang="ts">
-	import LeftSideMenu from '$lib/components/ui/LeftSideMenu.svelte';
+	import TopBar from "$lib/components/bars/TopBar.svelte";
+	import LeftSideMenu from '$lib/components/menus/Side.svelte';
 </script>
 
 <div class="shell">
-	<div class="header">
-		<slot name="header"></slot>
-	</div>
-	<div class="container">
-		<div class="left"><LeftSideMenu></LeftSideMenu></div>
-		<div class="main"><slot></slot></div>
-		<div class="right">
-			<slot name="right"></slot>
-		</div>
+	<TopBar></TopBar>
+	<div class="shell-container">
+		<LeftSideMenu></LeftSideMenu>
+		<div class="shell-main"><slot></slot></div>
 	</div>
 </div>
 
@@ -20,15 +16,21 @@
 		width: 100%;
 		height: 100vh;
 		overflow: hidden;
+		display: flex;
+		flex-direction: column;
 	}
 
-	.container {
-		width: 100%;
+	.shell-container {
+		flex: 1;
 		display: flex;
-		gap: var(--spacing-4);
+		min-height: 0;
+		overflow: hidden;
 
-		.main {
+		.shell-main {
 			flex: 1;
+			min-width: 0;
+			overflow: auto;
+			padding-top: 68px;
 		}
 	}
 </style>
